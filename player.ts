@@ -12,7 +12,7 @@ class Player {
 
     toString() {
 
-        return `User: ${this.name}\nMoney: £${this.money}`;
+        return `User:  ${this.name}\nMoney: £${this.money}`;
 
     }
 

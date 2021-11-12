@@ -6,7 +6,7 @@ var Player = /** @class */ (function () {
         this.money = money;
     }
     Player.prototype.toString = function () {
-        return "User: " + this.name + ".\nMoney \u00A3" + this.money + ".";
+        return "User:  " + this.name + "\nMoney: \u00A3" + this.money;
     };
     return Player;
 }());

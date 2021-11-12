@@ -6,4 +6,5 @@ var prompt = promptSync();
 console.log('<--- Betting Game --->');
 console.log('You need to enter your name player!');
 var mainUser = f.getPlayer();
-console.log(mainUser.toString());
+var playerRoll = f.getRoll(mainUser);
+// console.log(mainUser.toString());
