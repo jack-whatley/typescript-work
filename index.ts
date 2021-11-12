@@ -1,18 +1,12 @@
-interface Person {
+import * as promptSync from 'prompt-sync';
+import * as f from './functions';
+import Player from "./player";
 
-    name: string;
-    age: number;
-    address: string[];
+const prompt = promptSync();
 
-}
+console.log('<--- Betting Game --->');
+console.log('You need to enter your name player!');
 
-const jack: Person = {
+let mainUser: Player = f.getPlayer();
 
-    name: 'Jack',
-    age: 16,
-    address: ['Im', 'Not', 'Sharing']
-
-}
-
-console.log(jack);
- 
+console.log(mainUser.toString());

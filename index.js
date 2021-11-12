@@ -1,6 +1,9 @@
-var jack = {
-    name: 'Jack',
-    age: 16,
-    address: ['Im', 'Not', 'Sharing']
-};
-console.log(jack);
+"use strict";
+exports.__esModule = true;
+var promptSync = require("prompt-sync");
+var f = require("./functions");
+var prompt = promptSync();
+console.log('<--- Betting Game --->');
+console.log('You need to enter your name player!');
+var mainUser = f.getPlayer();
+console.log(mainUser.toString());
