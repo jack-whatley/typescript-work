@@ -30,7 +30,7 @@ export function getRoll(a: Player): number {
     
     if (rollDice.toLowerCase() === 'yes') {
 
-        console.log(`Good choice ${a.name}.`);
+        console.log(`\nGood choice ${a.name}.`);
         console.log(`You have rolled a ${playerRoll}`);
 
     } else {
@@ -42,4 +42,18 @@ export function getRoll(a: Player): number {
 
     return playerRoll;
 
-} 
+}
+
+export function getBet(a: Player): number {
+
+    let userBet: number = parseInt(prompt(`\nHow much do you want to bet ${a.name}? `));
+
+    while (isNaN(userBet) || userBet > a.money) {
+
+        userBet = parseInt(prompt(`How much do you want to bet ${a.name}? `));
+
+    }
+
+    return userBet;
+
+}

@@ -9,4 +9,7 @@ console.log('You need to enter your name player!');
 
 let mainUser: Player = f.getPlayer();
 let playerRoll: number = f.getRoll(mainUser);
+let userBet: number = f.getBet(mainUser);
 // console.log(mainUser.toString());
+
+
